@@ -1,44 +1,38 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ERIX Android Tech Studio</title>
 <style>
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:#090a0e;color:#f6f6f8;font-family:Arial,sans-serif;line-height:1.6}
-header{background:#121319;border-bottom:1px solid #34343d;padding:18px 6%;display:flex;justify-content:space-between;align-items:center;gap:12px}
-.logo{font-size:27px;font-weight:900;letter-spacing:4px}
+body{margin:0;background:#080a10;color:white;font-family:Arial,sans-serif}
+header{padding:22px 6%;background:#11141c;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:15px}
+.logo{font-size:27px;font-weight:900;letter-spacing:3px}
 .logo span{color:#ed3048}
-.logo small{display:block;font-size:9px;letter-spacing:1.4px;color:#aeb1ba}
-nav a{color:#ddd;text-decoration:none;margin-left:12px;font-size:13px}
-.hero{text-align:center;padding:110px 6%;background:radial-gradient(ellipse at top,#421722,#090a0e 70%)}
-.tag{color:#ff5367;font-size:12px;letter-spacing:3px;font-weight:bold}
-h1{font-size:clamp(38px,7vw,72px);line-height:1.13;margin:22px auto;max-width:850px}
-.hero p,.subtitle{color:#b2b5c0}
-.hero p{max-width:600px;margin:0 auto 30px}
-.button{display:inline-block;background:#ed3048;color:white;text-decoration:none;padding:13px 25px;border-radius:8px;font-weight:bold}
+nav a{color:#ccc;text-decoration:none;margin-left:15px;font-size:13px}
+.hero{text-align:center;padding:110px 7%;background:radial-gradient(circle at top,#4a1728,#080a10 70%)}
+h1{font-size:clamp(36px,7vw,68px);margin:20px 0}
+p{color:#b7bdc9;line-height:1.7}
+.tag{color:#ff5268;font-size:12px;letter-spacing:3px;font-weight:bold}
+.btn{display:inline-block;background:#ed3048;color:white;padding:14px 25px;border-radius:8px;text-decoration:none;font-weight:bold}
 section{padding:75px 6%;max-width:1200px;margin:auto}
-h2{text-align:center;font-size:35px;margin:10px 0}
-.subtitle{text-align:center;margin-bottom:40px}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
-.card{background:linear-gradient(145deg,#1c1e27,#101116);border:1px solid #343640;border-radius:17px;padding:28px}
-.appicon{width:65px;height:65px;background:linear-gradient(135deg,#fa4358,#721222);border-radius:16px;display:grid;place-items:center;font-size:26px;font-weight:bold;margin-bottom:20px}
-.card h3{font-size:23px;margin-bottom:8px}
-.card p{color:#b3b6c1;font-size:14px}
-.status{display:inline-block;color:#ff8995;background:#392027;padding:5px 12px;border-radius:30px;font-size:12px}
-.about{background:#15161d;border:1px solid #353641;border-radius:20px;padding:35px;text-align:center}
-.about p{max-width:720px;margin:auto;color:#b9bac4}
-footer{text-align:center;padding:35px 20px;border-top:1px solid #30313a;color:#9496a3;font-size:13px}
-@media(max-width:600px){header{flex-direction:column}nav a{margin:0 8px}.hero{padding:85px 6%}}
+h2{text-align:center;font-size:34px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;margin-top:35px}
+.card{background:linear-gradient(140deg,#202431,#101219);border:1px solid #343845;border-radius:20px;padding:27px}
+.appicon{width:85px;height:85px;border-radius:20px;background:linear-gradient(140deg,#ef304b,#67182a);display:grid;place-items:center;font-size:28px;font-weight:bold;overflow:hidden}
+.appicon img{width:100%;height:100%;object-fit:cover}
+.card h3{font-size:23px}
+.status{color:#ff8c9b;font-size:12px;font-weight:bold}
+.about{background:#151923;padding:35px;border-radius:18px;text-align:center}
+footer{text-align:center;border-top:1px solid #303442;padding:30px;color:#9299a8}
+@media(max-width:600px){header{justify-content:center}.hero{padding:85px 6%}}
 </style>
 </head>
 <body>
 <header>
-<div class="logo">ER<span>IX</span><small>ANDROID TECH STUDIO</small></div>
+<div class="logo">ER<span>IX</span></div>
 <nav>
 <a href="#home">Home</a>
 <a href="#apps">Apps</a>
@@ -46,55 +40,49 @@ footer{text-align:center;padding:35px 20px;border-top:1px solid #30313a;color:#9
 </nav>
 </header>
 
-<main>
 <div class="hero" id="home">
-<div class="tag">ANDROID APPLICATION STUDIO</div>
-<h1>Crafting the Next Generation of Digital Experiences.</h1>
-<p>Welcome to ERIX Android Tech Studio. Explore our Android applications, creative projects and upcoming releases.</p>
-<a class="button" href="#apps">Explore Our Apps</a>
+<div class="tag">ERIX ANDROID TECH STUDIO</div>
+<h1>Engineering the Future of Android.</h1>
+<p>Creating modern Android applications with innovation, creativity and performance.</p>
+<a class="btn" href="#apps">Explore Our Apps</a>
 </div>
 
 <section id="apps">
-<div class="tag" style="text-align:center">OUR PROJECTS</div>
-<h2>Android Applications</h2>
-<p class="subtitle">Discover what we're building.</p>
-<div class="cards">
-<article class="card">
-<div class="appicon">▶</div>
+<div class="tag" style="text-align:center">OUR APPLICATIONS</div>
+<h2>Discover Our Projects</h2>
+<div class="grid">
+<div class="card">
+<div class="appicon"><img src="assets/mrx-player.png" alt="MRX Player" onerror="this.replaceWith(document.createTextNode('▶'))"></div>
 <h3>MRX Player</h3>
-<p>A media player project designed for Android, with a focus on video playback and user experience.</p>
-<span class="status">In Testing</span>
-</article>
-
-<article class="card">
-<div class="appicon">✦</div>
+<p>A modern Android media player focused on video playback and user experience.</p>
+<div class="status">IN TESTING</div>
+</div>
+<div class="card">
+<div class="appicon"><img src="assets/mrx-editor.png" alt="MRX Editor" onerror="this.replaceWith(document.createTextNode('✦'))"></div>
 <h3>MRX Editor</h3>
-<p>Upcoming Android video editing application, planned with creative editing tools and visual effects.</p>
-<span class="status">Upcoming</span>
-</article>
-
-<article class="card">
-<div class="appicon">⇄</div>
+<p>Creative video editing tools and visual effects for Android.</p>
+<div class="status">UPCOMING</div>
+</div>
+<div class="card">
+<div class="appicon"><img src="assets/mrx-converter.png" alt="MRX Converter" onerror="this.replaceWith(document.createTextNode('⇄'))"></div>
 <h3>MRX Converter</h3>
-<p>Planned Android media conversion application.</p>
-<span class="status">Upcoming</span>
-</article>
+<p>An upcoming Android application for media conversion.</p>
+<div class="status">UPCOMING</div>
+</div>
 </div>
 </section>
 
 <section id="about">
-<div class="tag" style="text-align:center">WHO WE ARE</div>
 <h2>About ERIX Studio</h2>
 <div class="about">
-<p>ERIX Android Tech Studio is an emerging Android application development brand focused on creating useful, thoughtfully designed mobile applications. Our projects are built around creativity, functionality and continuous improvement.</p>
+<p>ERIX Android Tech Studio is an emerging software development studio dedicated to designing useful, elegant and innovative Android applications.</p>
+<p>Explore our current projects and stay tuned for future releases.</p>
 </div>
 </section>
-</main>
 
 <footer>
 <strong>ERIX Android Tech Studio</strong>
-<p>Android Applications | Creative Technology</p>
-<p>&copy; 2026 ERIX Android Tech Studio</p>
+<p>© 2026 ERIX Android Tech Studio</p>
 </footer>
 </body>
 </html>
